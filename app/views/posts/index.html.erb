@@ -1,1 +1,6 @@
-<p>Hello World</p>
+<!---In the controller, we set @post for index.html.erb to be ALL the posts, so now we can loop through all the posts-->
+<%= @post.each do |post| %>
+	<p><%= link_to post.title, post%></p><br>
+	<p><%= post.created_at.strftime("%B %d, %Y")%></p><br>
+	<br>
+<%end%>

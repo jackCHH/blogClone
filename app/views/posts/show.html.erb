@@ -1,0 +1,13 @@
+<!---Everything below is from show from the post controller, therefore we need to add a @post to the controller-->
+
+<h1 class = "title">
+	<%= @post.title%>
+</h1>
+
+<p class="date">
+  Submitted <%= time_ago_in_words(@post.created_at) %> Ago
+</p>
+
+<p class="body">
+  <%= @post.body %>
+</p>
